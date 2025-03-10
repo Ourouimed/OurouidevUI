@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../dist/css/ourouidevui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ouroui Components Documentation</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Buttons Section -->
+        <section>
+            <h2>Buttons</h2>
+            <h3>Solid Buttons</h3>
+            <div class="button-group autofil wrap">
+                <button class="btn">Default</button>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+            </div>
+
+            <h3>Outline Buttons</h3>
+            <div class="button-group autofil wrap">
+                <button class="btn btn-outline">Default</button>
+                <button class="btn btn-outline btn-primary">Primary</button>
+                <button class="btn btn-outline btn-secondary">Secondary</button>
+                <button class="btn btn-outline btn-success">Success</button>
+                <button class="btn btn-outline btn-warning">Warning</button>
+                <button class="btn btn-outline btn-danger">Danger</button>
+            </div>
+
+            <h3>Disabled Buttons</h3>
+            <div class="button-group wrap">
+                <button class="btn btn-primary" disabled>Primary</button>
+                <button class="btn btn-secondary" disabled>Secondary</button>
+                <button class="btn btn-success" disabled>Success</button>
+                <button class="btn btn-warning" disabled>Warning</button>
+                <button class="btn btn-danger" disabled>Danger</button>
+            </div>
+
+            <h3>Circle Buttons</h3>
+            <div class="button-group">
+                <button class="btn btn-primary btn-circle">O</button>
+            </div>
+
+            <h3>Button Sizes</h3>
+            <div class="button-group wrap">
+                <button class="btn btn-primary btn-sm">Small</button>
+                <button class="btn btn-primary btn-md">Medium</button>
+                <button class="btn btn-primary btn-lg">Large</button>
+            </div>
+
+            <h3>Rounded Buttons</h3>
+            <div class="button-group wrap">
+                <button class="btn btn-primary btn-rounded">Primary Rounded</button>
+                <button class="btn btn-outline btn-secondary btn-rounded">Secondary Outline Rounded</button>
+                <button class="btn btn-success btn-sm btn-rounded">Small Success Rounded</button>
+            </div>
+        </section>
+
+        <!-- Messages Section -->
+        <section>
+            <h2>Messages</h2>
+            <div class="msg-box msg-primary">Primary Message</div>
+            <div class="msg-box msg-secondary">Secondary Message</div>
+            <div class="msg-box msg-success">Success Message</div>
+            <div class="msg-box msg-warning">Warning Message</div>
+            <div class="msg-box msg-danger">Danger Message</div>
+        </section>
+
+        <!-- Inputs Section -->
+        <section>
+            <h2>Inputs</h2>
+            <label for="name1" class="label">Name</label>
+            <input type="text" class="input" id="name1" placeholder="Enter your name">
+            <label for="email1" class="label">Email</label>
+            <input type="email" class="input" id="email1" placeholder="Enter your email">
+            <label for="readonly1" class="label">Read Only</label>
+            <input type="text" class="input" id="readonly1" value="read only input" readonly>
+            <label for="disabled1" class="label">Disabled</label>
+            <input type="text" class="input" id="disabled1" placeholder="disabled input" disabled>
+            <label for="message1" class="label">Message</label>
+            <textarea class="msg-area" id="message1" placeholder="Your message here"></textarea>
+
+            <div class="inp-grp">
+                <input type="text" class="input" placeholder="your message here">
+                <button class="btn btn-primary">Send</button>
+            </div>
+
+            <div class="input-double">
+                <div class="input-field">
+                    <label for="name2" class="label">Name</label>
+                    <input type="text" class="input" id="name2" placeholder="your name here">
+                </div>
+                <div class="input-field">
+                    <label for="password1" class="label">Password</label>
+                    <div class="inp-with-logo-inside password-toggle">
+                        <input type="password" id="password1" class="input" placeholder="Enter your password" />
+                        <button type="button" class="btn btn-circle togglePassword" aria-label="Toggle password visibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="floating-label">
+                    <input type="text" id="name3" class="input inp-md" placeholder=" " />
+                    <label for="name3">Name</label>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="floating-label">
+                    <input type="email" id="email2" class="input inp-md" placeholder=" " />
+                    <label for="email2">Email</label>
+                </div>
+            </div>
+
+            <div class="input-field">
+                <div class="floating-label">
+                    <input type="password" id="password2" class="input inp-md" placeholder=" " />
+                    <label for="password2">Password</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tables Section -->
+        <section>
+            <h2>Tables</h2>
+            <h3>Basic Table</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Viewer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Striped and Bordered Table</h3>
+            <table class="table striped bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Viewer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Hoverable Table</h3>
+            <table class="table striped bordered hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Viewer</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Dark Theme Table</h3>
+            <table class="table dark striped rounded">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mike Johnson</td>
+                        <td>mike@example.com</td>
+                        <td>Viewer</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
+
+<script src="../dist/js/ourouidevui.min.js"></script>

@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const togglePassword = document.querySelector('.password-toggle > .togglePassword');
+    const passwordInput = document.querySelector('.password-toggle > input');
+
+    if (togglePassword && passwordInput) {
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+
+            const icon = togglePassword.querySelector('i');
+            if (type === 'text') {
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+    }
+});

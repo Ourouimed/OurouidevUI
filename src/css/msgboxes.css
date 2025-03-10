@@ -1,0 +1,16 @@
+/* Message Box Styles */
+.msg-box {
+    padding: 0.6rem;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.msg-primary { background-color: var(--primary-color-light); color: var(--primary-color-dark); border: 1px solid var(--primary-color); }
+.msg-secondary { background-color: var(--secondary-color-light); color: var(--secondary-color-dark); border: 1px solid var(--secondary-color); }
+.msg-success { background-color: var(--success-color-light); color: var(--success-color-dark); border: 1px solid var(--success-color); }
+.msg-warning { background-color: var(--warning-color-light); color: var(--warning-color-dark); border: 1px solid var(--warning-color); }
+.msg-danger { background-color: var(--danger-color-light); color: var(--danger-color-dark); border: 1px solid var(--danger-color); }

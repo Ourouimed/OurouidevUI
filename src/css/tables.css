@@ -1,0 +1,83 @@
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table.striped tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+}
+
+.table.striped tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.table.bordered th,
+.table.bordered td {
+    border: 1px solid #dddddd;
+}
+
+
+.table.hover tbody tr:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+
+.table.rounded {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.table.compact th,
+.table.compact td {
+    padding: 8px 10px;
+}
+
+
+.table th {
+    background-color: var(--primary-color-dark);
+    color: white;
+    font-weight: bold;
+}
+
+
+.table.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.table.dark th {
+    background-color: #444;
+    color: #fff;
+}
+
+.table.dark tbody tr:nth-of-type(odd) {
+    background-color: #555;
+}
+
+.table.dark tbody tr:nth-of-type(even) {
+    background-color: #666;
+}
+
+.table.dark tbody tr:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+
+.table.responsive {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}

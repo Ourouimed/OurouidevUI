@@ -1,0 +1,32 @@
+:root {
+    /* Primary Theme */
+    --primary-color: #007eff;
+    --primary-color-light: rgba(0, 126, 255, 0.1);
+    --primary-color-dark: #005bbf;
+
+    /* Secondary Theme */
+    --secondary-color: #444444;
+    --secondary-color-light: rgba(68, 68, 68, 0.1);
+    --secondary-color-dark: #2d2d2d;
+
+    /* Success Theme */
+    --success-color: #2fedad;
+    --success-color-light: rgba(47, 237, 173, 0.1);
+    --success-color-dark: #1f9f7a;
+
+    /* Warning Theme */
+    --warning-color: #fdcb6e;
+    --warning-color-light: rgba(253, 203, 110, 0.1);
+    --warning-color-dark: #c99e4d;
+
+    /* Danger Theme */
+    --danger-color: #e62d2c;
+    --danger-color-light: rgba(230, 45, 44, 0.1);
+    --danger-color-dark: #a3201f;
+
+    /* Transition */
+    --transition: all 0.3s ease;
+
+    /* Input Border Color */
+    --input-border-color: #cfcfcf;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "ourouidevui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build:css": "postcss src/css/main.css -o dist/css/ourouidevui.min.css",
+    "build:js": "rollup -c",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "rollup": "^4.35.0"
+  }
+}
