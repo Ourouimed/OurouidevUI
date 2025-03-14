@@ -12,12 +12,18 @@
     padding: 12px 15px;
 }
 
+
+.table tr:not(.table.dark tr) {
+    border-bottom: 1px solid #ddd;
+}
+
+
 .table.striped tbody tr:nth-of-type(odd) {
     background-color: #ffffff;
 }
 
 .table.striped tbody tr:nth-of-type(even) {
-    background-color: #f9f9f9;
+    background-color: #e5e5e5;
 }
 
 .table.bordered th,
@@ -27,10 +33,41 @@
 
 
 .table.hover tbody tr:hover {
-    background-color: var(--primary-color-light);
-    color: var(--primary-color-dark);
+    background-color: #e5e5e5;
     cursor: pointer;
 }
+
+
+.table.primary.hover tbody tr:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-dark);
+}
+
+
+.table.primary.hover tbody tr:hover {
+    background-color: var(--primary-color-light);
+    color: var(--primary-color-dark);
+}
+
+
+.table.secondary.hover tbody tr:hover {
+    background-color: var(--secondary-color-light);
+    color: var(--secondary-color-dark);
+}
+
+
+.table.warning.hover tbody tr:hover {
+    background-color: var(--warning-color-light);
+    color: var(--warning-color-dark);
+}
+
+.table.success.hover tbody tr:hover {
+    background-color: var(--success-color-light);
+    color: var(--success-color-dark);
+}
+
+
+
 
 
 .table.rounded {
@@ -46,9 +83,28 @@
 
 
 .table th {
-    background-color: var(--primary-color-dark);
-    color: white;
     font-weight: bold;
+}
+
+.table.primary th{
+    background-color: var(--primary-color);
+    color: white;
+}
+.table.secondary th{
+    background-color: var(--secondary-color);
+    color: white;
+}
+.table.success th{
+    background-color: var(--success-color);
+    color: white;
+}
+.table.warning th{
+    background-color: var(--warning-color);
+    color: black;
+}
+.table.danger th{
+    background-color: var(--danger-color);
+    color: white;
 }
 
 
