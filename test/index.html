@@ -265,3 +265,37 @@
 </html>
 
 <script src="../dist/js/ourouidevui.min.js"></script>
+
+<script>
+    
+    let t = new CreateTable(["ID" , "Name" , 'Email' , 'Role']  , 
+    {
+        isDark : false ,
+        compact : false ,
+        striped : true ,
+        bordered : true ,
+        rounded : true ,
+        hover : true,
+        theme : 'secondary'
+    }
+    )
+    document.querySelector('.container').append(t.render())
+    t.addRow(1 , 'Medamine' , 'medamine@gmail.com' , 'Admin')
+    t.addRow(2 , 'Ahmed' , 'ahmed@gmail.com' , 'User')
+    t.addRow(3 , 'Ahmed' , 'ahmed@gmail.com' , 'User')
+
+    console.log(t.rows)
+    console.log(t.getRow(1))
+    console.log(t.getCol(0 , 3))
+    t.setCol(0 , 2 , '50')
+    console.log(t.getCol(0 , 0))
+    
+    t.clearTable()
+    console.log(t.rows)
+
+    let rows = [
+    [1,4,5 , 1] ,  [4,5,5 , 5] ,  [1,5,0 , 5]
+    ]
+    t.insertData(rows)
+    console.log(t.getRowLen())
+    </script>

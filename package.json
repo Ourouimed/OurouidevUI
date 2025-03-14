@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "build:css": "postcss src/css/main.css -o dist/css/ourouidevui.min.css",
     "build:js": "rollup -c",
